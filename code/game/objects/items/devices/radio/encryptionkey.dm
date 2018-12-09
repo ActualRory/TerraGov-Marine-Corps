@@ -49,17 +49,17 @@
 /obj/item/device/encryptionkey/ce
 	name = "Chief Engineer's Encryption Key"
 	icon_state = "ce_cypherkey"
-	channels = list("Engi" = TRUE, "Command" = TRUE)
+	channels = list("Engi" = TRUE, "Command" = TRUE, "Logi" = TRUE)
 
 /obj/item/device/encryptionkey/cmo
 	name = "Chief Medical Officer's Encryption Key"
 	icon_state = "cmo_cypherkey"
 	channels = list("MedSci" = TRUE, "Command" = TRUE)
 
-/obj/item/device/encryptionkey/req
-	name = "Supply Radio Encryption Key"
+/obj/item/device/encryptionkey/log
+	name = "Logistics Encryption Key"
 	icon_state = "cargo_cypherkey"
-	channels = list("Req" = TRUE)
+	channels = list("Log" = TRUE, "Engi" = TRUE)
 
 /obj/item/device/encryptionkey/mmpo
 	name = "\improper Military Police radio encryption key"

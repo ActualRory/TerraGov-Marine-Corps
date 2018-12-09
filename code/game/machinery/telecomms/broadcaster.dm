@@ -327,13 +327,10 @@ var/message_delay = 0 // To make sure restarting the recentmessages list is kept
 		else if (display_freq == SEC_FREQ)
 			part_a = "<span class='secradio'><span class='name'>"
 
-		else if (display_freq == ENG_FREQ)
-			part_a = "<span class='engradio'><span class='name'>"
-
 		else if (display_freq == MED_FREQ)
 			part_a = "<span class='medradio'><span class='name'>"
 
-		else if (display_freq == SUP_FREQ) // cargo
+		else if (display_freq == LOG_FREQ) // cargo
 			part_a = "<span class='supradio'><span class='name'>"
 
 
@@ -376,16 +373,14 @@ var/message_delay = 0 // To make sure restarting the recentmessages list is kept
 					blackbox.msg_command += blackbox_msg
 				if(MED_FREQ)
 					blackbox.msg_medical += blackbox_msg
-				if(ENG_FREQ)
-					blackbox.msg_engineering += blackbox_msg
 				if(SEC_FREQ)
 					blackbox.msg_security += blackbox_msg
 				if(DTH_FREQ)
 					blackbox.msg_deathsquad += blackbox_msg
 				if(SYND_FREQ)
 					blackbox.msg_syndicate += blackbox_msg
-//				if(SUP_FREQ)
-//					blackbox.msg_cargo += blackbox_msg
+				if(LOG_FREQ)
+					blackbox.msg_cargo += blackbox_msg
 				else
 					blackbox.messages += blackbox_msg
 
@@ -563,7 +558,7 @@ var/message_delay = 0 // To make sure restarting the recentmessages list is kept
 					blackbox.msg_command += blackbox_msg
 				if(MED_FREQ)
 					blackbox.msg_medical += blackbox_msg
-				if(ENG_FREQ)
+				if(LOG_FREQ)
 					blackbox.msg_engineering += blackbox_msg
 				if(SEC_FREQ)
 					blackbox.msg_security += blackbox_msg
@@ -571,8 +566,6 @@ var/message_delay = 0 // To make sure restarting the recentmessages list is kept
 					blackbox.msg_deathsquad += blackbox_msg
 				if(SYND_FREQ)
 					blackbox.msg_syndicate += blackbox_msg
-//				if(SUP_FREQ)
-//					blackbox.msg_cargo += blackbox_msg
 				else
 					blackbox.messages += blackbox_msg
 

@@ -97,7 +97,7 @@ On the map:
 */
 //var/const/COMM_FREQ = 1353
 //var/const/SCI_FREQ = 1351
-//var/const/SUP_FREQ = 1347
+//var/const/LOG_FREQ = 1347
 
 
 //Misc channels
@@ -115,7 +115,7 @@ var/const/COMM_FREQ 	= 1353
 var/const/MED_FREQ 		= 1355
 var/const/ENG_FREQ 		= 1357
 var/const/SEC_FREQ 		= 1359
-var/const/SUP_FREQ 		= 1354
+var/const/LOG_FREQ 		= 1354
 
 var/const/DS1_FREQ		= 1441
 var/const/DS2_FREQ		= 1443
@@ -136,7 +136,7 @@ var/list/radiochannels = list(
 	"Response Team" = ERT_FREQ,
 	"Syndicate" 	= SYND_FREQ,
 	"Yautja" 		= YAUT_FREQ,
-	"NT PMC" 		= PMC_FREQ,
+	"WY PMC" 		= PMC_FREQ,
 	"SpecOps" 		= DTH_FREQ,
 	"UPP" 			= RUS_FREQ,
 	"Colonist"		= DUT_FREQ,
@@ -146,7 +146,7 @@ var/list/radiochannels = list(
 	"MedSci"		= MED_FREQ,
 	"Engi"			= ENG_FREQ,
 	"MP"			= SEC_FREQ,
-	"Req"			= SUP_FREQ,
+	"Logistics"		= LOG_FREQ,
 
 	"Alpha"			= ALPHA_FREQ,
 	"Bravo"			= BRAVO_FREQ,
@@ -166,7 +166,7 @@ var/list/CENT_FREQS = list(ERT_FREQ, DTH_FREQ, PMC_FREQ, DUT_FREQ, YAUT_FREQ)
 var/list/ANTAG_FREQS = list(SYND_FREQ, RUS_FREQ)
 
 //Depts - just used for colors in headset.dm
-var/list/DEPT_FREQS = list(MED_FREQ, ENG_FREQ, SEC_FREQ, ERT_FREQ, SYND_FREQ, DTH_FREQ, CIV_GEN_FREQ, CIV_COMM_FREQ, ALPHA_FREQ, BRAVO_FREQ,CHARLIE_FREQ, DELTA_FREQ, SUP_FREQ)
+var/list/DEPT_FREQS = list(MED_FREQ, SEC_FREQ, ERT_FREQ, SYND_FREQ, DTH_FREQ, CIV_GEN_FREQ, CIV_COMM_FREQ, ALPHA_FREQ, BRAVO_FREQ,CHARLIE_FREQ, DELTA_FREQ, LOG_FREQ)
 
 #define TRANSMISSION_WIRE	0
 #define TRANSMISSION_RADIO	1

@@ -284,11 +284,6 @@
 	icon_state = "com_headset"
 	keyslot1 = new /obj/item/device/encryptionkey/cmo
 
-/obj/item/device/radio/headset/almayer/mt
-	name = "engineering radio headset"
-	desc = "When the engineers wish to chat like girls. To access the engineering channel, use :e. "
-	icon_state = "eng_headset"
-	keyslot1 = new /obj/item/device/encryptionkey/engi
 
 /obj/item/device/radio/headset/almayer/doc
 	name = "medical radio headset"
@@ -296,22 +291,22 @@
 	icon_state = "med_headset"
 	keyslot1 = new /obj/item/device/encryptionkey/med
 
-/obj/item/device/radio/headset/almayer/ct
-	name = "supply radio headset"
-	desc = "A headset used by the RO and his slave(s). To access the supply channel, use :u."
+/obj/item/device/radio/headset/almayer/tech
+	name = "logistics radio headset"
+	desc = "A headset used by the men truly running the ship. To access the logistics channel, use :u."
 	icon_state = "cargo_headset"
-	keyslot1 = new /obj/item/device/encryptionkey/req
+	keyslot1 = new /obj/item/device/encryptionkey/log
 
 
 /obj/item/device/radio/headset/almayer/cmpcom
 	name = "marine chief MP radio headset"
-	desc = "This is used by the chief MP. Channels are as follows: :v - marine command, :p - military police, :q - alpha squad, :b - bravo squad, :c - charlie squad, :d - delta squad, :m - medbay, :u - requisitions"
+	desc = "This is used by the chief MP. Channels are as follows: :v - marine command, :p - military police, :q - alpha squad, :b - bravo squad, :c - charlie squad, :d - delta squad, :m - medbay, :u - logistics."
 	icon_state = "med_headset"
 	keyslot1 = new /obj/item/device/encryptionkey/cmpcom
 
 /obj/item/device/radio/headset/almayer/mcom
 	name = "marine command radio headset"
-	desc = "This is used by the marine command. Channels are as follows: :v - marine command, :q - alpha squad, :b - bravo squad, :c - charlie squad, :d - delta squad, :m - medbay, :u - requisitions"
+	desc = "This is used by the marine command. Channels are as follows: :v - marine command, :q - alpha squad, :b - bravo squad, :c - charlie squad, :d - delta squad, :m - medbay, :u - logistics."
 	icon_state = "med_headset"
 	keyslot1 = new /obj/item/device/encryptionkey/mcom
 
